@@ -47,13 +47,14 @@ h4 {
   font-size: 28px;
 }
 
-h5 {
+h5,
+a {
   font-size: 14px;
   letter-spacing: 0.08em;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 a {
-  text-transform: uppercase;
   text-decoration: none;
 }
