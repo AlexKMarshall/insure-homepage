@@ -15,6 +15,39 @@ body,
   padding: 0;
 }
 
+/* LAYOUT */
+
+.page-container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 24px;
+}
+
+nav li:last-child {
+  margin-left: 30px;
+}
+
+.call-to-action {
+  padding: 12px 24px;
+  border: 2px solid;
+}
+
 /* TYPOGRAPHY */
 
 html {
@@ -57,4 +90,10 @@ a {
 
 a {
   text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
 }
