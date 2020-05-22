@@ -66,8 +66,16 @@ nav li:last-child {
   object-fit: cover;
 }
 
-.main-info {
+.hero-info {
   grid-column: 1 / 7;
+}
+
+.hero-info h1 {
+  margin: 72px 32px 32px 0;
+}
+
+.hero-info p {
+  margin-bottom: 32px;
 }
 
 /* TYPOGRAPHY */
@@ -76,6 +84,7 @@ html {
   font-family: Karla, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 160%;
 }
 
 h1,
