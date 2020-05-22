@@ -18,7 +18,7 @@ body,
 /* LAYOUT */
 
 .page-container {
-  max-width: 1110px;
+  max-width: min(1110px, calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -44,8 +44,30 @@ nav li:last-child {
 }
 
 .call-to-action {
+  display: inline-block;
   padding: 12px 24px;
   border: 2px solid;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+}
+
+.hero-image {
+  display: block;
+  grid-column: 7 / 13;
+}
+
+.hero-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-info {
+  grid-column: 1 / 7;
 }
 
 /* TYPOGRAPHY */
