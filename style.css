@@ -90,6 +90,18 @@ h2 {
   margin: 50px 0 80px;
 }
 
+.value-prop {
+  margin-bottom: 150px;
+}
+
+.value-prop img {
+  margin-bottom: 32px;
+}
+
+.value-prop h4 {
+  margin-bottom: 24px;
+}
+
 /* TYPOGRAPHY */
 
 html {
