@@ -361,10 +361,6 @@ a:active {
   color: var(--dark-greyish-violet);
 }
 
-.social-icons img {
-  color: var(--very-dark-violet);
-}
-
 .hero-info.full-width-background::before,
 .highlight-section {
   background-color: var(--dark-violet);
@@ -390,4 +386,14 @@ h4,
 footer a,
 footer a:visited {
   color: var(--very-dark-violet);
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--dark-greyish-violet);
+}
+
+svg:hover {
+  fill: var(--very-dark-violet);
 }
