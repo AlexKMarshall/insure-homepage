@@ -105,7 +105,8 @@ nav li:last-child {
   padding-top: 90px;
 }
 
-.hero-image img {
+.hero-image img,
+button img {
   display: block;
   width: 100%;
   object-fit: cover;
@@ -388,12 +389,49 @@ footer a:visited {
   color: var(--very-dark-violet);
 }
 
-svg {
+footer svg {
   width: 24px;
   height: 24px;
   fill: var(--dark-greyish-violet);
 }
 
-svg:hover {
+footer svg:hover {
   fill: var(--very-dark-violet);
+}
+
+/* MOBILE NAVIGATION */
+button {
+  border: none;
+  outline: none;
+}
+
+.toggler {
+  position: absolute;
+  right: 0;
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .toggler {
+    display: block;
+    visibility: visible;
+  }
+
+  .toggler * {
+    display: none;
+    visibility: hidden;
+  }
+
+  .toggler.open > .toggle-open,
+  .toggler.closed > .toggle-close {
+    display: none;
+    visibility: hidden;
+  }
+
+  .toggler.open > .toggle-close,
+  .toggler.closed > .toggle-open {
+    display: block;
+    visibility: visible;
+  }
 }
