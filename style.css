@@ -18,7 +18,7 @@ body,
 /* LAYOUT */
 
 :root {
-  --visible-width: 0px;
+  --visible-width: 100vw;
 }
 
 .page-container {
