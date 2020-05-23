@@ -68,6 +68,10 @@ nav li:last-child {
   grid-column-end: span 4;
 }
 
+.col-3 {
+  grid-column-end: span 3;
+}
+
 .col-2 {
   grid-column-end: span 2;
 }
@@ -131,6 +135,10 @@ h2 {
   margin-left: 14px;
 }
 
+.footer-links {
+  padding: 40px 0 64px;
+}
+
 /* TYPOGRAPHY */
 
 html {
@@ -170,6 +178,14 @@ a {
   letter-spacing: 0.08em;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.footer-links {
+  line-height: 225%;
+}
+
+.footer-links h5 {
+  line-height: 350%;
 }
 
 a {
