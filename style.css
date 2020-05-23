@@ -116,6 +116,10 @@ nav li:last-child {
   position: relative;
 }
 
+.full-width-background {
+  position: relative;
+}
+
 .full-width-background::before {
   content: " ";
   width: var(--visible-width);
@@ -324,11 +328,28 @@ li {
 :root {
   --dark-violet: hsl(256, 26%, 20%);
   --very-dark-violet: hsl(270, 9%, 17%);
+  --very-light-grey: hsl(0, 0%, 98%);
+  --transparent-white: hsla(0, 0%, 100%, 90%);
 }
 
-.full-width-background::before,
+.hero-info.full-width-background::before,
 .highlight-section {
   background-color: var(--dark-violet);
+}
+
+footer.full-width-background::before {
+  background-color: var(--very-light-grey);
+}
+
+footer {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.hero,
+.highlight-section,
+.hero a:visited,
+.highlight-section a:visited {
+  color: var(--transparent-white);
 }
 
 h2,
