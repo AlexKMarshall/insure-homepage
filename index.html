@@ -21,7 +21,7 @@
   <div class="page-container">
     <header>
       <img src="images/logo.svg" alt="Insure logo" />
-      <nav>
+      <nav aria-labelledby="menu-label">
         <ul>
           <li>
             <a href="/">
@@ -45,7 +45,12 @@
           </li>
         </ul>
       </nav>
-      <button class="toggler closed">
+      <span hidden id="menu-label">Main menu</span>
+      <button
+        class="toggler"
+        aria-labelledby="menu-label"
+        aria-expanded="false"
+      >
         <img src="images/icon-hamburger.svg" class="toggle-open" />
         <img src="images/icon-close.svg" class="toggle-close" />
       </button>

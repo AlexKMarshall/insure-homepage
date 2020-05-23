@@ -423,14 +423,14 @@ button {
     visibility: hidden;
   }
 
-  .toggler.open > .toggle-open,
-  .toggler.closed > .toggle-close {
+  .toggler[aria-expanded="true"] > .toggle-open,
+  .toggler[aria-expanded="false"] > .toggle-close {
     display: none;
     visibility: hidden;
   }
 
-  .toggler.open > .toggle-close,
-  .toggler.closed > .toggle-open {
+  .toggler[aria-expanded="true"] > .toggle-close,
+  .toggler[aria-expanded="false"] > .toggle-open {
     display: block;
     visibility: visible;
   }
