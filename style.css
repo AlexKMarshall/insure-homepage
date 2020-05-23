@@ -136,7 +136,7 @@ h2 {
   align-items: center;
 }
 
-.social-icons > a {
+.social-icons > a:not(:first-child) {
   margin-left: 14px;
 }
 
@@ -151,6 +151,11 @@ h2 {
   .col-3,
   .col-2 {
     grid-column-end: span 12;
+  }
+
+  .start-2,
+  .start-10 {
+    grid-column-start: 1;
   }
 
   header {
@@ -177,10 +182,37 @@ h2 {
   .hero-info {
     padding-left: 24px;
     padding-right: 24px;
+    margin-bottom: 140px;
   }
 
   .hero-info h1 {
     margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .value-prop {
+    margin-bottom: 80px;
+  }
+
+  .value-prop:last-of-type {
+    margin-bottom: 140px;
+  }
+
+  .highlight-section .call-to-action {
+    margin-top: 40px;
+    justify-self: center;
+  }
+
+  .footer-top {
+    padding: 80px 24px 40px;
+    flex-direction: column;
+  }
+
+  .footer-top > .logo {
+    margin-bottom: 24px;
+  }
+
+  .footer-links > div {
     margin-bottom: 24px;
   }
 }
