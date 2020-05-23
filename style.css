@@ -329,7 +329,16 @@ li {
   --dark-violet: hsl(256, 26%, 20%);
   --very-dark-violet: hsl(270, 9%, 17%);
   --very-light-grey: hsl(0, 0%, 98%);
+  --dark-greyish-violet: hsl(273, 4%, 51%);
   --transparent-white: hsla(0, 0%, 100%, 90%);
+}
+
+body {
+  color: var(--dark-greyish-violet);
+}
+
+a:visited {
+  color: var(--dark-greyish-violet);
 }
 
 .hero-info.full-width-background::before,
@@ -353,6 +362,8 @@ footer {
 }
 
 h2,
-h4 {
+h4,
+footer a,
+footer a:visited {
   color: var(--very-dark-violet);
 }
