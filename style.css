@@ -414,15 +414,21 @@ button {
     z-index: 10;
     width: var(--visible-width);
     left: var(--left-offset);
-    background: red;
     top: 100%;
     height: calc(100vh - 100%);
-    /* transform: scale(0, 0); */
+    background-color: var(--very-dark-violet);
+    transition: transform 300ms ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;
   }
 
   .toggler {
     display: block;
     visibility: visible;
+  }
+
+  nav.active {
+    transform: scaleY(1);
   }
 
   .toggler[aria-expanded="true"] > .toggle-open,
