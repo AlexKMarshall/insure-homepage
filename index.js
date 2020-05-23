@@ -1,5 +1,6 @@
 const root = document.documentElement;
 const body = document.getElementsByTagName("body")[0];
+const pageContainer = document.querySelector(".page-container");
 const fullWidthBackground = document.getElementsByClassName(
   "full-width-background"
 )[0];
@@ -27,6 +28,6 @@ function setVisibleWidth() {
 }
 
 function setLeftOffset() {
-  const leftOffset = -1 * fullWidthBackground.getBoundingClientRect().left;
+  const leftOffset = -1 * pageContainer.getBoundingClientRect().left;
   root.style.setProperty("--left-offset", `${leftOffset}px`);
 }

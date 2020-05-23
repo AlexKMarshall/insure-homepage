@@ -194,11 +194,6 @@ h2 {
     position: relative;
   }
 
-  nav {
-    position: absolute;
-    transform: scale(0, 0);
-  }
-
   .full-width-mobile {
     width: var(--visible-width);
     position: relative;
@@ -413,14 +408,19 @@ button {
 }
 
 @media screen and (max-width: 800px) {
+  nav {
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    background: red;
+    width: var(--visible-width);
+    left: var(--left-offset);
+    /* transform: scale(0, 0); */
+  }
+
   .toggler {
     display: block;
     visibility: visible;
-  }
-
-  .toggler * {
-    display: none;
-    visibility: hidden;
   }
 
   .toggler[aria-expanded="true"] > .toggle-open,
