@@ -93,6 +93,15 @@ nav li:last-child {
     grid-column-end: span 12;
   }
 
+  header {
+    position: relative;
+  }
+
+  nav {
+    position: absolute;
+    transform: scale(0, 0);
+  }
+
   .hero-image {
     width: 100vw;
     position: relative;
