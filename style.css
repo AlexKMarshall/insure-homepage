@@ -341,6 +341,20 @@ a:visited {
   color: var(--dark-greyish-violet);
 }
 
+a:hover,
+a:active {
+  color: var(--very-dark-violet);
+}
+
+.call-to-action:hover {
+  background: var(--very-dark-violet);
+  color: var(--transparent-white);
+}
+
+.social-icons img {
+  color: var(--very-dark-violet);
+}
+
 .hero-info.full-width-background::before,
 .highlight-section {
   background-color: var(--dark-violet);
