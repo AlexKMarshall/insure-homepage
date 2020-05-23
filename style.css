@@ -357,6 +357,10 @@ a:active {
   color: var(--very-dark-violet);
 }
 
+.footer-links a:hover {
+  color: var(--dark-greyish-violet);
+}
+
 .social-icons img {
   color: var(--very-dark-violet);
 }
