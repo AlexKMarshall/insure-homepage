@@ -117,7 +117,6 @@ nav li:last-child {
 
 .full-width-background::before {
   content: " ";
-  background: red;
   width: var(--visible-width);
   top: 0;
   left: var(--left-offset);
@@ -317,4 +316,11 @@ ul,
 ol,
 li {
   list-style: none;
+}
+
+/* COLORS */
+
+.full-width-background::before,
+.highlight-section {
+  background-color: hsl(256, 26%, 20%);
 }
