@@ -1,9 +1,6 @@
 const root = document.documentElement;
 const body = document.getElementsByTagName("body")[0];
 const pageContainer = document.querySelector(".page-container");
-const fullWidthBackground = document.getElementsByClassName(
-  "full-width-background"
-)[0];
 const toggler = document.querySelector("button.toggler");
 const navMenu = document.querySelector("nav");
 

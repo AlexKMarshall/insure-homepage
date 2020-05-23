@@ -21,6 +21,7 @@ body,
   --visible-width: 100vw;
   --page-margin: 24px;
   --left-offset: calc(-1 * var(--page-margin));
+  --header-height: 0;
 }
 
 body {
@@ -410,11 +411,12 @@ button {
 @media screen and (max-width: 800px) {
   nav {
     position: absolute;
-    top: 100%;
     z-index: 10;
-    background: red;
     width: var(--visible-width);
     left: var(--left-offset);
+    background: red;
+    top: 100%;
+    height: calc(100vh - 100%);
     /* transform: scale(0, 0); */
   }
 
