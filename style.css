@@ -56,6 +56,10 @@ nav li:last-child {
   column-gap: 20px;
 }
 
+.col-12 {
+  grid-column-end: span 12;
+}
+
 .col-6 {
   grid-column-end: span 6;
 }
@@ -64,8 +68,16 @@ nav li:last-child {
   grid-column-end: span 4;
 }
 
-.col-12 {
-  grid-column-end: span 12;
+.col-2 {
+  grid-column-end: span 2;
+}
+
+.start-2 {
+  grid-column-start: 2;
+}
+
+.start-10 {
+  grid-column-start: 10;
 }
 
 .hero-image {
@@ -100,6 +112,11 @@ h2 {
 
 .value-prop h4 {
   margin-bottom: 24px;
+}
+
+.highlight-section {
+  align-items: center;
+  padding: 72px 0;
 }
 
 /* TYPOGRAPHY */
