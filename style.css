@@ -351,6 +351,12 @@ a:active {
   color: var(--transparent-white);
 }
 
+.hero .call-to-action:hover,
+.highlight-section .call-to-action:hover {
+  background: var(--transparent-white);
+  color: var(--very-dark-violet);
+}
+
 .social-icons img {
   color: var(--very-dark-violet);
 }
