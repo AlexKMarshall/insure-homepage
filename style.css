@@ -17,6 +17,10 @@ body,
 
 /* LAYOUT */
 
+:root {
+  --visible-width: 0px;
+}
+
 .page-container {
   max-width: min(1110px, calc(100% - 48px));
   margin: 0 auto;
@@ -168,9 +172,9 @@ h2 {
   }
 
   .full-width-mobile {
-    width: 100vw;
+    width: var(--visible-width);
     position: relative;
-    left: calc(-50vw + 50%);
+    left: calc(calc(-0.5 * var(--visible-width)) + 50%);
   }
 
   .hero-image {
