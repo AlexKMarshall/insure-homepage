@@ -321,7 +321,17 @@ li {
 
 /* COLORS */
 
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+}
+
 .full-width-background::before,
 .highlight-section {
-  background-color: hsl(256, 26%, 20%);
+  background-color: var(--dark-violet);
+}
+
+h2,
+h4 {
+  color: var(--very-dark-violet);
 }
