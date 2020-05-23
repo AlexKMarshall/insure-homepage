@@ -117,6 +117,18 @@ h2 {
 .highlight-section {
   align-items: center;
   padding: 72px 0;
+  margin-bottom: 150px;
+}
+
+.footer-top {
+  padding: 60px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons > a {
+  margin-left: 14px;
 }
 
 /* TYPOGRAPHY */
