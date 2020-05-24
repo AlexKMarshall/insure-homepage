@@ -157,6 +157,7 @@ h2 {
 }
 
 .highlight-section {
+  position: relative;
   align-items: center;
   padding: 72px 0;
   margin-bottom: 150px;
@@ -472,5 +473,43 @@ button {
   .toggler[aria-expanded="false"] > .toggle-open {
     display: block;
     visibility: visible;
+  }
+}
+
+/* DECORATION */
+img.decoration {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  display: none;
+}
+
+@media screen and (min-width: 801px) {
+  img.decoration {
+    display: block;
+  }
+
+  .decoration.hero-top-right {
+    right: 0;
+  }
+
+  .decoration.hero-bottom-left {
+    top: 75%;
+    left: 0;
+  }
+
+  .decoration.highlight-right {
+    right: 0;
+  }
+
+  .decoration.footer-top-left {
+    left: var(--left-offset);
+  }
+
+  .highlight-section {
+    background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
   }
 }
