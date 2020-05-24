@@ -530,4 +530,8 @@ img.decoration {
   h2:before {
     color: var(--dark-greyish-violet);
   }
+
+  .footer-top {
+    border-bottom: 1px solid var(--dark-greyish-violet);
+  }
 }
