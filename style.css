@@ -133,7 +133,7 @@ button img {
 }
 
 .hero-info h1 {
-  margin: 72px 32px 32px 0;
+  padding: 72px 32px 32px 0;
 }
 
 .hero-info p {
@@ -511,5 +511,19 @@ img.decoration {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
+  }
+
+  h1 {
+    position: relative;
+  }
+
+  h1:before {
+    content: "";
+    color: var(--transparent-white);
+    border-top: 2px solid;
+    height: 1px;
+    width: 30%;
+    position: absolute;
+    top: 0;
   }
 }
