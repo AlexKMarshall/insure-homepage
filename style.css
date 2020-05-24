@@ -358,6 +358,7 @@ a:active {
   color: var(--dark-greyish-violet);
 }
 
+.hero-info,
 .hero-info.full-width-background::before,
 .highlight-section {
   background-color: var(--dark-violet);
